@@ -1,0 +1,80 @@
+<!-- 
+
+Required Softwares
+
+  node 
+
+How to run
+
+  1 Download the assignmentD3 folder
+
+  2 open the  git bash prompt/ command prompt 
+
+  3 Run the below command
+
+    node server.js
+
+  4 open the link http://localhost:3000/
+
+  or 
+
+  you can see the image attached to mail (how to run server)
+
+   -->
+
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <div>
+       <div>
+          <h4>Scatter plot chart in D3 for Deloitte</h4>
+        </div>
+        <div class="formBody">
+          <form class="form-horizontal">
+            <!--X axis -->
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="xAxis">Select X axis</label>
+              <div class="col-sm-4">
+                  <select class="form-control" id="xAxis">
+                  <option value="">Select</option>
+                  <option value="Total_Manufacturing">Total Manufacturing</option>
+                  <option value="Wholesale_Trade" selected="selected">Wholesale Trade</option>
+                  <option value="Retail_Trade">Retail Trade</option>
+                  <option value="Information">Information</option>
+                  <option value="Finance_and_insurance">Finance and insurance</option>
+                  <option value="Real_estate_and_rental_and_leasing">Real estate and rental and leasing</option>
+                  <option value="Other_Industries">Other Industries</option>
+              </select>
+              </div>
+            </div>
+            <!-- Y axis -->
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="yAxis">Select Y axis</label>
+              <div class="col-sm-4">
+                <select class="form-control" id="yAxis">
+                <option value="">Select</option>
+                <option value="Total_Manufacturing" selected="selected">Total Manufacturing</option>
+                <option value="Wholesale_Trade">Wholesale Trade</option>
+                <option value="Retail_Trade">Retail Trade</option>
+                <option value="Information">Information</option>
+                <option value="Finance_and_insurance">Finance and insurance</option>
+                <option value="Real_estate_and_rental_and_leasing">Real estate and rental and leasing</option>
+                <option value="Other_Industries">Other Industries</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="chart"></div>
+    </div>
+  </body>
+  <script src="lib/d3.v3.min.js" charset="utf-8"></script>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src='js/script.js'></script>
+</html>
